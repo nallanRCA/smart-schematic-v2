@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Schematic v2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<div id="appHeader">
+    <h1>Smart Schematic v2</h1>
+
+    <div id="toolbar">
+        Variant:
+        <select id="variantSelect">
+            <option value="ALL">All Parts</option>
+            <option value="DNP">Hide DNP</option>
+        </select>
+		
+
+    </div>
+</div>
+
+<!-- ===== SCHEMATIC AREA ===== -->
+<div id="schematicContainer"></div>
+
+<!-- ===== POPUP ===== -->
+<div id="popup" onclick="closePopup()">
+  <div class="popup-content" onclick="event.stopPropagation()">
+    <span class="close" onclick="closePopup()">✖</span>
+    <div id="card"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

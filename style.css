@@ -1,0 +1,77 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== FIXED HEADER ===== */
+#appHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    z-index: 999;
+}
+
+#appHeader h1 {
+    margin: 0;
+    padding: 12px;
+    text-align: center;
+}
+
+#toolbar {
+    padding: 8px;
+    text-align: center;
+    background: #f7f7f7;
+    border-top: 1px solid #eee;
+}
+
+/* ===== SCHEMATIC VIEWPORT ===== */
+#schematicContainer {
+    position: fixed;
+    top: 100px;     /* space for header */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background: #ffffff;
+    z-index: 1;
+}
+
+#schematicContainer svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ===== POPUP ===== */
+#popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 2000;
+}
+
+.popup-content {
+    background: #fff;
+    width: 320px;
+    margin: 120px auto;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.close {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+#schematicContainer {
+    cursor: grab;
+}
